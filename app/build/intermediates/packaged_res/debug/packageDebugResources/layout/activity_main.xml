@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#ECECEC"
+    >
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#757575"
+        android:gravity="end"
+        android:padding="8dp"
+        android:text="Dung"
+        android:background="@color/material_dynamic_secondary90"
+        android:textAlignment="viewStart"/>
+    <TextView
+        android:id="@+id/txtExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#757575"
+        android:gravity="end"
+        android:padding="8dp"/>
+    <!-- Hiển thị kết quả -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:textColor="#616161"
+        android:gravity="end"
+        android:padding="8dp"/>
+
+
+
+
+    <!-- Bố cục lưới cho bàn phím -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:padding="4dp"
+        android:layout_marginTop="8dp">
+
+
+
+        <!-- Dòng 1 -->
+        <Button
+            android:id="@+id/btnCE"
+            style="@style/ButtonStyle"
+            android:text="CE"
+
+             />
+        <Button android:id="@+id/btnC" android:text="C" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btnBS" android:text="BS" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btnDivide" android:text="/" style="@style/ButtonStyle"/>
+
+        <!-- Dòng 2 -->
+        <Button android:id="@+id/btn7" android:text="7" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btn8" android:text="8" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btn9" android:text="9" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btnMultiply" android:text="x" style="@style/ButtonStyle"/>
+
+        <!-- Dòng 3 -->
+        <Button android:id="@+id/btn4" android:text="4" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btn5" android:text="5" style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/ButtonStyle"
+
+            android:text="6" />
+        <Button android:id="@+id/btnMinus" android:text="-" style="@style/ButtonStyle"/>
+
+        <!-- Dòng 4 -->
+        <Button android:id="@+id/btn1" android:text="1" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btn2" android:text="2" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btn3" android:text="3" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btnPlus" android:text="+" style="@style/ButtonStyle"/>
+
+        <!-- Dòng 5 -->
+        <Button android:id="@+id/btnPlusMinus" android:text="+/-" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btn0" android:text="0" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btnDot" android:text="." style="@style/ButtonStyle"/>
+        <Button android:id="@+id/btnEquals" android:text="=" style="@style/ButtonStyle"/>
+    </GridLayout>
+
+</LinearLayout>
